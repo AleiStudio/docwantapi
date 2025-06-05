@@ -213,28 +213,30 @@
     </div>
     
     <div class="section">
-        <h2>Endpoint de Reddit</h2>
+        <h2>Endpoint de subreddit</h2>
         
         <div class="endpoint">
-            <div><span class="method">GET</span> <span class="url">https://reddit.want.cat/api/:subreddit</span></div>
+            <div><span class="method">GET</span> <span class="url">https://reddit.want.cat/api/:subreddit</span> <span class="url">500 post</span></div>
+            <div><span class="method">GET</span> <span class="url">https://reddit.want.cat/api/v2/:subreddit</span> <span class="url">100 post</span></div>
+            <div><span class="method">GET</span> <span class="url">https://reddit.want.cat/api/v3/:subreddit</span> <span class="url">2000 post</span></div>
             <p>Donde <code>:subreddit</code> es el nombre del subreddit que deseas consultar.</p>
             
             <div class="response">
                 <pre>{
-  "title": "uuuf",
-  "author": "Available-Proof-4263",
+  "title": "Antojando 😏",
+  "author": "Just_Tailor_3961",
   "subreddit": "Staryuukisincensura",
-  "mediaUrl": "https://i.redd.it/qr54t8ef0cue1.jpeg",
-  "postUrl": "https://reddit.com/r/Staryuukisincensura/comments/1jx95x3/uuuf/",
-  "thumbnail": "https://a.thumbs.redditmedia.com/GK2m2JCOsB7Z86NkZPYCG1Y0goQsA5Y3HnuwWad2PW0.jpg",
-  "upvotes": 770,
+  "mediaUrl": "https://i.redd.it/5xy00yzklrce1.png",
+  "postUrl": "https://reddit.com/r/Staryuukisincensura/comments/1i0e5x3/antojando/",
+  "thumbnail": "https://b.thumbs.redditmedia.com/ntbghg6BvoUO13mnN4oIpqrS0f3KItGpaWL1eduBpZQ.jpg",
+  "upvotes": 1721,
   "downvotes": 0,
-  "score": 770,
+  "score": 1721,
   "upvoteRatio": 0.99,
-  "commentCount": 10,
-  "createdAt": 1744432162,
-  "createdAtFormatted": "2025-04-12T04:29:22.000Z",
-  "retrievedAt": 1748323256528,
+  "commentCount": 30,
+  "createdAt": 1736775628,
+  "createdAtFormatted": "2025-01-13T13:40:28.000Z",
+  "retrievedAt": 1749101074957,
   "isNSFW": true,
   "isOC": false,
   "isCrosspost": false,
@@ -244,7 +246,53 @@
   "mediaDimensions": null,
   "galleryItems": null,
   "totalPostsFetched": 500,
-  "mediaPostsFound": 487,
+  "mediaPostsFound": 485,
+  "pagesFetched": 5,
+  "version": "v1 - v2 - v3",
+  "awards": []
+}</pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Endpoint de search reddit</h2>
+        
+        <div class="endpoint">
+            <div><span class="method">GET</span> <span class="url">https://reddit.want.cat/api/search/:term</span> <span class="url">100 post</span></div>
+            <div><span class="method">GET</span> <span class="url">https://reddit.want.cat/api/v2/search/:term</span> <span class="url">500 post</span></div>
+            <div><span class="method">GET</span> <span class="url">https://reddit.want.cat/api/v3/search/:term</span> <span class="url">2000 post</span></div>
+            <p>Donde <code>:term</code> es el nombre del subreddit que deseas consultar.</p>
+            
+            <div class="response">
+                <pre>{
+  "title": "Alguien me hace joi de arigameplays?",
+  "author": "Critical_Response312",
+  "subreddit": "sexrolechat",
+  "searchTerm": "arigameplays",
+  "mediaUrl": "https://i.redd.it/5cbimwqilr4e1.jpeg",
+  "postUrl": "https://reddit.com/r/sexrolechat/comments/1h68egz/alguien_me_hace_joi_de_arigameplays/",
+  "thumbnail": "https://b.thumbs.redditmedia.com/EHkM5vaWYrU6OLDO5SskPTBDcOncHfE8dw0AP7S7Wsw.jpg",
+  "upvotes": 5,
+  "downvotes": 0,
+  "score": 5,
+  "upvoteRatio": 0.86,
+  "commentCount": 0,
+  "createdAt": 1733288806,
+  "createdAtFormatted": "2024-12-04T05:06:46.000Z",
+  "retrievedAt": 1749101183149,
+  "isNSFW": false,
+  "isOC": false,
+  "isCrosspost": false,
+  "isVideo": false,
+  "isGallery": false,
+  "mediaType": "image",
+  "mediaDimensions": null,
+  "galleryItems": null,
+  "totalPostsFetched": 204,
+  "mediaPostsFound": 169,
+  "pagesFetched": 3,
+  "version": "v1 - v2 - v3",
   "awards": []
 }</pre>
             </div>
